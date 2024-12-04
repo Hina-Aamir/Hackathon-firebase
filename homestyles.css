@@ -1,0 +1,124 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f4f8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  /* Profile Container */
+  .container {
+    width: 100%;
+    max-width: 800px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+  }
+  
+  /* Profile Header */
+  .profile-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+  }
+  
+  .profile-image {
+    position: relative;
+  }
+  
+  .profile-image img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+  
+  .profile-image button {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    display: none;
+  }
+  
+  .profile-info h1 {
+    font-size: 2rem;
+    font-weight: bold;
+  }
+  
+  .profile-info p {
+    color: #888;
+    font-size: 1rem;
+  }
+  
+  .profile-info button {
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  /* Profile Details */
+  .profile-details h2 {
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+  }
+  
+  .profile-details label {
+    display: block;
+    margin: 10px 0 5px;
+  }
+  
+  .profile-details input,
+  .profile-details textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .profile-details textarea {
+    resize: vertical;
+    min-height: 100px;
+  }
+  
+  /* Form Actions */
+  .form-actions button {
+    background-color: #28a745;
+    color: white;
+    padding: 8px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .form-actions button#cancel-btn {
+    background-color: #dc3545;
+    margin-left: 10px;
+  }
+  
+  #save-btn:disabled,
+  #cancel-btn:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+  }
+  

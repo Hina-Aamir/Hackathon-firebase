@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HACKATHONE-FIREBASE</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="header">
+        <div class="flex"><!DOCTYPE html>
+            <html lang="en">
+            <head>
+              <meta charset="UTF-8">
+              <meta name="viewport" content="width=device-width, initial-scale=1.0">
+              <title>Coranu - Thoughts, Ideas, and Stories</title>
+              <link rel="stylesheet" href="styles.css">
+            </head>
+            <body>
+              <header class="header">
+                <div class="header-left">
+                    <img src="./assets/Ellipse 1.png" alt="Coranu Logo" class="logo"> 
+                  <img src="./assets/Coranu.png" alt="Coranu Logo" class="logo">
+                </div>
+                <div class="header-center">
+                  <input type="text" class="search-bar" placeholder="Search...">
+                </div>
+                <div class="header-right">
+                 <a href="register.html"><button class="btn login-btn" id="register">Login/Register</button></a> 
+                </div>
+              </header>
+            
+              <main>
+                <section class="hero">
+                  <h1>Thoughts, Ideas, and Stories</h1>
+                  <p>A space where creativity flows, ideas take shape, and stories come to life. Dive in, explore, and connect with insights that inspire and resonate.</p>
+                </section>
+            <section>
+                <form class="form" onsubmit="createPost(event)">
+                    <input required id="title" type="text" class="input" placeholder="Title..." minlength="10" maxlength="50">
+                    <textarea required id="post" class="input post" required placeholder="Text..." oninput="textAreaSize()" minlength="25" maxlength="2000"></textarea>
+                    <button type="submit" class="button">Publish blog</button>
+                </form>
+            </section>
+                <section class="content">
+                  <div class="sidebar">
+                    <h3>Blog Topics</h3>
+                    <ul>
+                      <li>Company</li>
+                      <li>Design</li>
+                      <li>Technology</li>
+                      <li>Crypto</li>
+                      <li>Artificial Intelligence</li>
+                      <li>Work</li>
+                    </ul>
+                    <h3>Guide and Tools</h3>
+                    <ul>
+                      <li>Guidelines</li>
+                      <li>Mentorship</li>
+                      <li>Tutorial</li>
+                      <li>Training</li>
+                      <li>Career</li>
+                      <li>Self Care</li>
+                    </ul>
+                  </div>
+            
+                  <div class="main-content">
+                    <h2>Trending Topics</h2>
+                    <div class="tags">
+                      <span>Design Thinking</span>
+                      <span>Technology</span>
+                      <span>Web3</span>
+                      <span>Programming</span>
+                      <span>AI</span>
+                    </div>
+                    <article>
+                      <p>Mar 1</p>
+                      <h3>Powerful Trading Tools and Features for Experienced Investors</h3>
+                      <p>I'm always trying to think of new and interesting business ideas...</p>
+                      <span>By Mark Tuchel • 7 min read</span>
+                    </article>
+                    <article>
+                      <p>Jan 2</p>
+                      <h3>Master JavaScript: 10 Essential Tips Every Developer Must Know</h3>
+                      <p>I'm always trying to think of new and interesting business ideas...</p>
+                      <span>By Harry Oland • 4 min read</span>
+                    </article>
+                  </div>
+                </section>
+            
+                <section class="newsletter">
+                  <h2>Join Our Newsletter</h2>
+                  <form>
+                    <input type="email" placeholder="Enter your email..." required>
+                    <button type="submit" class="btn submit-btn">Submit</button>
+                  </form>
+                  <p>*You can unsubscribe anytime</p>
+                </section>
+              </main>
+              <script src="app.js"></script>
+              <script src="firebase.js>"></script>
+
+            </html>
